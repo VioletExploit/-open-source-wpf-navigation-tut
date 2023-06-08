@@ -1,0 +1,25 @@
+﻿<Window x:Class="navigationdemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:navigationdemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="Beige">
+            <Button x:Name="btn1" Content="Window1"
+                    Click="btn1_Click"/>
+            <Button x:Name="btn2" Content="Window2"
+                    Click="btn2_Click"/>
+            <Button x:Name="btn3" Content="Window3"
+                    Click="btn3_Click"/>
+            
+        </StackPanel>
+        <ContentControl x:Name="CC" Grid.Column="1"/>
+    </Grid>
+</Window>
